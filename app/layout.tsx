@@ -30,7 +30,7 @@ export default ({ children }: LayoutProps) => {
         </header>
         <main className="grow">{children}</main>
         <footer className="text-center text-xs">
-          <p>Footer text</p>
+          <p>Deployed on Vercel</p>
         </footer>
       </body>
     </html>
