@@ -1,5 +1,6 @@
 import Heading from "@/components/Heading";
 import { getLatestReview } from "@/lib/reviews";
+import Image from "next/image";
 import Link from "next/link";
 
 export default async function HomePage() {
@@ -9,7 +10,7 @@ export default async function HomePage() {
         <li className="rounded my-5" key={latestReview.slug}>
           <Link href={`/reviews/${latestReview.slug}`}>
             {latestReview.date}
-            <img
+            <Image
               className="rounded"
               src={latestReview.image}
               alt="stardew"
