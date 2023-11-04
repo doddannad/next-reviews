@@ -17,7 +17,7 @@ export const metadata = {
   
 }
 
-export default ({ children }: LayoutProps) => {
+export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${orbitron.variable}`}>
       <head>
